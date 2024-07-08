@@ -17,7 +17,7 @@ MASK_PATH = os.path.join(SCRIPT_DIR, 'crop_test_mask.png')
 IMAGE_PATH = os.path.join(os.path.dirname(os.path.dirname(SCRIPT_DIR)), 'data', 'parkinglot', 'result.png')
 EMPTY_IMAGE_PATH = os.path.join(os.path.dirname(os.path.dirname(SCRIPT_DIR)), 'data', 'parkinglot', '14 slots.png')
 MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(SCRIPT_DIR)), 'models', 'model.p')
-MODEL = pickle.load(open(MODEL_PATH))
+MODEL = pickle.load(open(MODEL_PATH, "rb"))
 
 
 # Load the image and mask
