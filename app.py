@@ -104,6 +104,3 @@ def exit_car_endpoint():
             return jsonify({'error': 'Car is not parked'})
     else:
         return jsonify({'error': 'Car not found'})
-
-if __name__ == '__main__':
-    app.run(debug=True)
